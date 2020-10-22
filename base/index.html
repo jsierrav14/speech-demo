@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Speech synthesiser</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <h1>The greenhouse effect</h1>
+
+
+
+  <form>
+    <p> The greenhouse effect is the process by which radiation from a planet's atmosphere warms the planet's surface to
+      a temperature above what it would be without this atmosphere.[1][2]
+    </p>
+    <p>
+      Radiatively active gases (i.e., greenhouse gases) in a planet's atmosphere radiate energy in all directions. Part
+      of this radiation is directed towards the surface, warming it.[3] The intensity of the downward radiation – that
+      is, the strength of the greenhouse effect – will depend on the atmosphere's temperature and on the amount of
+      greenhouse gases that the atmosphere contains.
+    </p>
+    <p>
+      Earth's natural greenhouse effect is critical to supporting life, and initially was a precursor to life moving out
+      of the ocean onto land. Human activities, however, mainly the burning of fossil fuels and clearcutting of forests,
+      have accelerated the greenhouse effect and caused global warming.[4]
+
+    </p>
+    <p>
+      The planet Venus experienced runaway greenhouse effect, resulting in an atmosphere which is 96% carbon dioxide,
+      with surface atmospheric pressure roughly the same as found 900 m (3,000 ft) underwater on Earth. Venus may have
+      had water oceans, but they would have boiled off as the mean surface temperature rose to the current 735 K (462
+      °C; 863 °F).[5][6][7]
+
+    </p>
+    <p>
+      The term "greenhouse effect" continues to see use in scientific circles and the media despite being a slight
+      misnomer, as an atmosphere reduces radiative heat loss[8] while a greenhouse blocks convective heat loss.[2] The
+      result, however, is an increase in temperature in both cases.[9][10]
+
+    </p>
+    <input type="text" class="txt">
+    <div>
+      <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+      <div class="rate-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+    <div>
+      <label for="pitch">Pitch</label><input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+      <div class="pitch-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div>
+      <label for="rateSize">Text Size</label><input type="range" min="12" max="40" value="1" step="0.1" id="rateSize">
+      <div class="rate-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+ 
+    <select>
+      
+    </select>
+    <div>
+      <label for="rateSize">Change color</label>
+      <select id="selectColor">
+        <option value="-1">Choose an option</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+
+
+      </select>
+      <div class="rate-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="controls">
+      <button id="play" type="submit">Play</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
